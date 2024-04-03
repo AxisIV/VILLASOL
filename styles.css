@@ -1,0 +1,143 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    display: flex; /* Utiliza flexbox para la disposición */
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 10px 0;
+  }
+  .logo img {
+    max-width: 100px; /* ajusta el tamaño máximo del logo según tu diseño */
+    height: auto;
+    margin-left: 30px;
+    margin-right:70px;
+  }
+  nav {
+    display: flex; /* Utiliza flexbox para alinear verticalmente */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff; /* Color de texto predeterminado */
+    padding: 10px 15px;
+  }
+  
+  /* Estilo para el enlace activo */
+  nav ul li a.active {
+    background-color: #9c7f5c; /* Color de fondo para el enlace activo */
+  }
+  
+  /* Estilos de la sección de presentación */
+  #presentacion {
+    background-image: url('background.jpg'); /* Cambia 'background.jpg' por la ruta de tu imagen de fondo */
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  #presentacion h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #presentacion p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .card {
+    border: 1px solid #ccc;
+    background-color: #444444;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 20px); /* Tamaño de las tarjetas (33.33% para tres tarjetas en una fila) */
+    box-sizing: border-box; /* Incluir el padding y border en el ancho de la tarjeta */
+    display: inline-block; /* Colocar las tarjetas en una línea horizontal */
+    vertical-align: top; /* Alinear las tarjetas en la parte superior */
+  }
+  
+  .card h2 {
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    margin-bottom: 0;
+  }
+  .imagen-card{
+    height: 100px;
+    width: auto;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilos de la sección de servicios */
+  #servicios {
+    padding: 50px 0;
+  }
+  
+  .servicio {
+    margin-bottom: 30px;
+  }
+  
+  .servicio img {
+    max-width: 100%;
+  }
+  
+  .servicio h3 {
+    margin-top: 15px;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
