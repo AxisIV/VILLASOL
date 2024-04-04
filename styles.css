@@ -22,16 +22,17 @@ body {
   header {
     display: flex; /* Utiliza flexbox para la disposición */
     align-items: center;
-    background-color: #1a1a1a;
+    background-color: #121212;
     padding: 10px 0;
   }
   .logo img {
     max-width: 100px; /* ajusta el tamaño máximo del logo según tu diseño */
     height: auto;
-    margin-left: 30px;
-    margin-right:70px;
+    margin-left: 50px;
+    margin-right:120px;
   }
   nav {
+    margin-left: 50px;
     display: flex; /* Utiliza flexbox para alinear verticalmente */
     justify-content: center; /* Centra horizontalmente los elementos */
     align-items: center; /* Centra verticalmente los elementos */
@@ -58,19 +59,23 @@ body {
   
   /* Estilo para el enlace activo */
   nav ul li a.active {
-    background-color: #9c7f5c; /* Color de fondo para el enlace activo */
+    border-radius: 20px;
+    background-color: #94907C; /* Color de fondo para el enlace activo */
+  }
+  .titulo-index{
+    font-family: "Libre Bodoni", serif;
   }
   
   /* Estilos de la sección de presentación */
   #presentacion {
     background-image: url('background.jpg'); /* Cambia 'background.jpg' por la ruta de tu imagen de fondo */
     background-size: cover;
-    padding: 100px 0;
+    padding: 10px 0;
     text-align: center;
   }
   
   #presentacion h1 {
-    font-size: 36px;
+    font-size: 45px;
     margin-bottom: 20px;
   }
   
@@ -80,7 +85,7 @@ body {
   }
   .card {
     border: 1px solid #ccc;
-    background-color: #444444;
+    background-color: #94907C;
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
