@@ -20,19 +20,22 @@ body {
   
   /* Estilos del encabezado */
   header {
+    margin-top: 10px;
     display: flex; /* Utiliza flexbox para la disposición */
     align-items: center;
     background-color: #121212;
-    padding: 10px 0;
+    padding: 2px 0;
   }
   .logo img {
-    max-width: 100px; /* ajusta el tamaño máximo del logo según tu diseño */
+    display: flex;
+    align-items: center;
+    max-width: 250px; /* ajusta el tamaño máximo del logo según tu diseño */
     height: auto;
-    margin-left: 50px;
-    margin-right:120px;
+    margin-left: 40px;
+    margin-right:30px;
   }
   nav {
-    margin-left: 50px;
+    margin: auto;
     display: flex; /* Utiliza flexbox para alinear verticalmente */
     justify-content: center; /* Centra horizontalmente los elementos */
     align-items: center; /* Centra verticalmente los elementos */
@@ -65,7 +68,10 @@ body {
   .titulo-index{
     font-family: "Libre Bodoni", serif;
   }
-  
+  .destacado{
+    font-weight: bold;
+    color: #EEE8AA;
+  }
   /* Estilos de la sección de presentación */
   #presentacion {
     background-image: url('background.jpg'); /* Cambia 'background.jpg' por la ruta de tu imagen de fondo */
@@ -83,16 +89,37 @@ body {
     font-size: 18px;
     margin-bottom: 30px;
   }
+  #servicios{
+    text-align: center;
+    color: #121212;
+  }
+  @keyframes show {
+    from{
+      opacity: o;
+      scale: 25%;
+    }
+
+    to{
+      opacity: 1;
+      scale: 100%;
+    }
+  }
   .card {
-    border: 1px solid #ccc;
-    background-color: #94907C;
+    border: 1px solid #94907C;
+    color: #fff;
+    background-color: #1b1b1b;
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
-    width: calc(33% - 20px); /* Tamaño de las tarjetas (33.33% para tres tarjetas en una fila) */
+    margin: 25px auto;
+    width: 90% ;/* Tamaño de las tarjetas (33.33% para tres tarjetas en una fila) */
     box-sizing: border-box; /* Incluir el padding y border en el ancho de la tarjeta */
-    display: inline-block; /* Colocar las tarjetas en una línea horizontal */
-    vertical-align: top; /* Alinear las tarjetas en la parte superior */
+    view-timeline-name: --card;
+    view-timeline-axis: block;
+    animation-timeline: --card;
+    animation-name: show;
+    animation-range: entry 25% cover 40%;
+    animation-fill-mode: both;
   }
   
   .card h2 {
